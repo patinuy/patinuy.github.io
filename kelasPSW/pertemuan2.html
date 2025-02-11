@@ -1,15 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Dasar-Dasar HTML</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dasar-Dasar HTML</title>
 </head>
 <body>
-	<!-- Judul Halaman -->
+    <!-- Judul Halaman -->
     <h1>Selamat Datang di Website Saya</h1>
 
     <!-- Paragraf -->
     <p>Ini adalah halaman HTML pertama saya. Halaman ini berisi berbagai elemen dasar dalam HTML.</p>
+
+    <!-- Heading -->
+    <h2>Heading dalam HTML</h2>
+    <h3>Subjudul Contoh</h3>
+
+    <!-- Gambar -->
+    <h2>Gambar dalam HTML</h2>
+    <img src="gambar.jpg" alt="Deskripsi Gambar" width="300">
+
+    <!-- Link -->
+    <h2>Link dalam HTML</h2>
+    <p>Kunjungi situs favorit saya: <a href="https://www.google.com" target="_blank">Google</a></p>
+
+    <!-- List (Ordered & Unordered) -->
+    <h2>Daftar dalam HTML</h2>
+    <h3>Ordered List</h3>
+    <ol>
+        <li>Item Pertama</li>
+        <li>Item Kedua</li>
+        <li>Item Ketiga</li>
+    </ol>
+
+    <h3>Unordered List</h3>
+    <ul>
+        <li>Item A</li>
+        <li>Item B</li>
+        <li>Item C</li>
+    </ul>
+
+    <!-- Tabel -->
+    <h2>Tabel dalam HTML</h2>
+    <table border="1">
+        <tr>
+            <th>Nama</th>
+            <th>Usia</th>
+        </tr>
+        <tr>
+            <td>Ani</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Budi</td>
+            <td>22</td>
+        </tr>
+    </table>
+
+    <!-- Formulir -->
+    <h2>Formulir dalam HTML</h2>
+    <form action="proses.php" method="POST">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br><br>
+
+        <input type="submit" value="Kirim">
+    </form>
+
+    <!-- Paragraf dengan Gaya (CSS Inline) -->
+    <h2>Paragraf dengan Gaya</h2>
+    <p style="color: blue; font-size: 18px;">Ini adalah teks berwarna biru.</p>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Website Saya. Semua Hak Dilindungi.</p>
+    </footer>
 </body>
 </html>
+
+<!--
+Penjelasan Kode:
+
+    Struktur Dasar HTML: Memiliki <html>, <head>, <body>, dan elemen wajib lainnya.
+    - Judul Halaman: <h1> digunakan sebagai judul utama.
+    - Paragraf: <p> digunakan untuk teks deskripsi.
+    - Heading (Judul & Subjudul): <h2>, <h3> digunakan untuk berbagai tingkatan heading.
+    - Gambar: <img> digunakan dengan atribut src dan alt.
+    - Link: <a> digunakan untuk membuat hyperlink.
+    - List (Ordered & Unordered): <ol> untuk daftar bernomor, <ul> untuk daftar dengan bullet.
+    - Tabel: <table> dengan <tr>, <th>, dan <td> untuk struktur data tabular.
+    - Formulir: <form> untuk input data dengan <input>.
+    - Paragraf dengan CSS Inline: Menggunakan atribut style.
+    - Footer: Bagian bawah halaman dengan hak cipta.
+-->
