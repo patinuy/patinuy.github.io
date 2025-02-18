@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengenalan CSS Lengkap</title>
+
+    <!-- Menghubungkan External CSS -->
+    <link rel="stylesheet" type="text/css" href="Pertemuan3Style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            text-transform: uppercase;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+
+        .inline-css {
+            color: blue;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .kotak {
+            width: 250px;
+            height: 120px;
+            background-color: lightblue;
+            padding: 10px;
+            margin: 20px;
+            border: 3px solid black;
+            text-align: center;
+            line-height: 120px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .grid-item {
+            background-color: coral;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>Pengenalan CSS Lengkap</header>
+
+    <div class="container">
+        <h1>Belajar CSS dari Dasar</h1>
+
+        <!-- Contoh Inline CSS -->
+        <p class="inline-css">Teks ini berwarna biru dan lebih besar (menggunakan Inline CSS).</p>
+        <!-- <p></p> -->
+         
+        <!-- Contoh Internal CSS -->
+        <div class="kotak">Kotak dengan Internal CSS</div>
+
+        <!-- Contoh External CSS -->
+        <div class="external-box">Kotak dengan External CSS</div>
+
+        <!-- Contoh Grid Layout -->
+        <h2>Contoh Layout Grid</h2>
+        <div class="grid-container">
+            <div class="grid-item">Item 1</div>
+            <div class="grid-item">Item 2</div>
+            <div class="grid-item">Item 3</div>
+            <div class="grid-item">Item 4</div>
+            <div class="grid-item">Item 5</div>
+            <div class="grid-item">Item 6</div>
+        </div>
+    </div>
+
+</body>
+</html>
