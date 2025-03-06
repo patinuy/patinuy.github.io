@@ -1,0 +1,65 @@
+<mxGraphModel>
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    
+    <!-- Entitas Eksternal -->
+    <mxCell id="2" value="Pelanggan" style="shape=rectangle;strokeColor=black;fillColor=lightgray;" vertex="1" parent="1">
+      <mxGeometry x="20" y="100" width="120" height="40" as="geometry" />
+    </mxCell>
+    
+    <mxCell id="3" value="Kasir" style="shape=rectangle;strokeColor=black;fillColor=lightgray;" vertex="1" parent="1">
+      <mxGeometry x="20" y="200" width="120" height="40" as="geometry" />
+    </mxCell>
+    
+    <mxCell id="4" value="Karyawan" style="shape=rectangle;strokeColor=black;fillColor=lightgray;" vertex="1" parent="1">
+      <mxGeometry x="20" y="300" width="120" height="40" as="geometry" />
+    </mxCell>
+    
+    <mxCell id="5" value="Supplier" style="shape=rectangle;strokeColor=black;fillColor=lightgray;" vertex="1" parent="1">
+      <mxGeometry x="20" y="400" width="120" height="40" as="geometry" />
+    </mxCell>
+    
+    <!-- Sistem Utama -->
+    <mxCell id="6" value="Sistem Restoran Makanan Padang" style="shape=ellipse;strokeColor=black;fillColor=white;" vertex="1" parent="1">
+      <mxGeometry x="250" y="200" width="180" height="80" as="geometry" />
+    </mxCell>
+    
+    <!-- Aliran Data -->
+    <mxCell id="7" value="Pemesanan Makanan" edge="1" parent="1" source="2" target="6">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    
+    <mxCell id="8" value="Konfirmasi Pesanan" edge="1" parent="1" source="6" target="2">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    
+    <mxCell id="9" value="Pembayaran" edge="1" parent="1" source="2" target="3">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    
+    <mxCell id="10" value="Konfirmasi Pembayaran" edge="1" parent="1" source="3" target="6">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    
+    <mxCell id="11" value="Ulasan & Rating" edge="1" parent="1" source="2" target="6">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    
+    <mxCell id="12" value="Reservasi Meja" edge="1" parent="1" source="2" target="6">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    
+    <mxCell id="13" value="Komplain Pelanggan" edge="1" parent="1" source="2" target="6">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    
+    <mxCell id="14" value="Permintaan Bahan Baku" edge="1" parent="1" source="6" target="5">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    
+    <mxCell id="15" value="Pengiriman Bahan Baku" edge="1" parent="1" source="5" target="6">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>
