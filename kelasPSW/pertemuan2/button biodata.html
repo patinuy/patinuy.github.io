@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WANT TO KNOW ME?</title>
+    <style>
+        /*Style untuk keseluruhan halaman*/
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .container {
+    background: white;
+    padding: 30px;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+button {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    }
+    button:hover {
+        background-color: #218838;
+    }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h2>apa yang ingin kamu ketahui tentang saya?</h2>
+        <select id="jenis">
+            <option value="hobi">hobi</option>
+            <option value="asal sekolah">asal sekolah</option>
+            <option value="warna kesukaan">warna kesukaan</option>
+            <option value="zodiak">zodiak</option>
+        </select>
+        <button onclick="cekjenis()">Cek</button>
+        <p id="hasiljenis"></p>
+    </div>
+    
+    <script>
+    function cekjenis() {
+            let jenis = document.getElementById("jenis").value;
+            let hasil = document.getElementById("hasiljenis");
+
+            let jawaban = {
+                "hobi": "Saya suka menulis, editing, bermain game, fotografi, dll.",
+                "asal sekolah": "Saya berasal dari SMAIT ULIL ALBAB BATAM.",
+                "warna kesukaan": "Warna favorit saya adalah biru.",
+                "zodiak": "Zodiak saya adalah Virgo."
+            };
+
+            hasil.textContent = jawaban[jenis] || "Pilihan tidak dikenali.";
+        }
+    </script>
+
+</body>
+</html>
