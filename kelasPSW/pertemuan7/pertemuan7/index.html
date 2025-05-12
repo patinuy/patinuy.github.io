@@ -1,0 +1,159 @@
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Tambahkan Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<title>Author</title>
+</head>
+
+<body>
+
+	<!-- Navigation -->
+	<nav class="site-navigation">
+		
+		<div class="site-navigation-inner site-container">
+			<div class="main-navigation">
+				<ul class="main-navigation__ul">
+					<li><a href="index.html">Homepage</a></li>
+					<li><a href="organization.html">organization</a></li>
+					<li><a href="hobby.html">hobby</a></li>
+					
+				</ul>
+			</div>
+			<div id="myBtn" class="burger-container" onclick="myFunction(this)">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+			<!-- END OF ALL HTML CONTENT -->
+			<script>
+				// Toggle menu saat tombol diklik
+				function myFunction(x) {
+					x.classList.toggle("change");
+					document.querySelector(".main-navigation").classList.toggle("open");
+				}
+
+				// Tutup menu saat link diklik
+				document.addEventListener("DOMContentLoaded", function () {
+					const links = document.querySelectorAll(".main-navigation a");
+					const menu = document.querySelector(".main-navigation");
+					const burger = document.getElementById("myBtn");
+
+					links.forEach(link => {
+					link.addEventListener("click", () => {
+						// Tutup menu dan hilangkan class "change"
+						menu.classList.remove("open");
+						burger.classList.remove("change");
+					});
+					});
+				});
+			</script>
+
+		</div>
+	</nav>
+	<!-- Navigation end -->
+
+	<!-- Top banner -->
+	<section class="fh5co-top-banner">
+		<div class="top-banner__inner site-container">
+			<div class="top-banner__image">
+				<img src="./images/webcam-toy-photo7.jpg" alt="foto siti" class="profile-photo">
+			</div>
+			<div class="top-banner__text">
+				<div class="top-banner__text-up">sss
+					<span class="brand-span">Hello! I'm</span>
+					<h2 class="top-banner__h2">Siti Ferda Fatinah Sessu</h2>
+				</div>
+				<div class="top-banner__text-down">
+				</div>
+				<p>keep trying and praying until you get what you pray and try for</p>
+			</div>
+		</div>
+	</section>
+	<!-- Top banner end -->
+
+	<!-- About me -->
+	<section class="fh5co-about-me">
+		<div class="about-me-inner site-container">
+			<article class="portfolio-wrapper">
+				
+				<div class="portfolio__bottom">
+					<div class="portfolio__name">
+						<span>EDUCATION</span>
+					</div>
+					<p>EDUCATION TAKEN BY SITI FERDA FATINAH SESSU.</p>
+				</div>
+			</article>
+			<div class="about-me__text">
+  				<div class="about-me-slider">
+    				<div class="slide-item">
+						<h2 class="universal-h2 universal-h2-bckg">Campus</h2>
+						<p><span>I</span> am currently studying at Batam International University (UIB) in the Faculty of Computer Science, Information Systems study program.</p>
+						
+					</div>
+					<div class="about-me-single-slide">
+						<h2 class="universal-h2 universal-h2-bckg">SMA</h2>
+						<p><span>I</span> am an alumni of Ulil Albab Batam Integrated Islamic High School, precisely in Batu Aji, I majored in science with the K13 curriculum in 2021-2024. </p>
+						
+					</div>
+					<div class="about-me-single-slide">
+						<h2 class="universal-h2 universal-h2-bckg">SMP</h2>
+						<p><span>I</span> am an alumni of the Hang Nadim Malay School Integrated Islamic Junior High School, Batam, precisely in Ditiban V, K13 curriculum in 2018-2021.</p>
+						
+					</div>
+					<div class="about-me-single-slide">
+						<h2 class="universal-h2 universal-h2-bckg">SD</h2>
+						<p><span>I</span> am an alumni of the Hang Nadim Malay School Integrated Islamic Elementary School in Batam, precisely in Ditiban V, K13 curriculum in 2012-2018.</p>
+					
+	
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="about-me-bckg"></div>
+	</section>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script>
+  		$(document).ready(function(){
+    		$('.about-me-slider').slick({
+      			dots: false,         // tidak pakai dot (opsional)
+      			arrows: true,        // aktifkan panah
+      			autoplay: true,
+      			autoplaySpeed: 4000,
+      			infinite: true
+   			 });
+  		});
+
+	</script>
+
+	<!-- About me end -->
+
+<footer>
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href="https://www.instagram.com/peryew_/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/perrxx2"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.youtube.com/@sffs28"><i class="fa-brands fa-youtube"></i></a>
+			<a href="https://www.tiktok.com/@eccuuw"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+        <div class="footerNav">
+            <ul><li><a href="">Home</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        
+		<p>© 2025 Author | Design by peryew </> | All rights Reserved.</p>
+		
+</footer>
+</body>
+</html>
+				

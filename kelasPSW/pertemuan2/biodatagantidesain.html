@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, #74ebd5, #acb6e5); /* Gradient Background */
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start; /* Mengatur posisi vertikal */
+  gap: 20px; /* Jarak antara foto dan tabel */
+  margin-top: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border: 2px solid #407fbd;
+}
+
+img {
+  width: 150px; /* Ukuran gambar */
+  height: 150px;
+  border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border: 2px solid #407fbd;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid #407fbd;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #407fbd;
+  color: white;
+}
+
+body.dark {
+  background: linear-gradient(to right, #2c3e50, #4ca1af);
+  color: white;
+}
+
+.container.dark {
+  background: #34495e;
+  border: 2px solid #1abc9c;
+}
+
+img.dark {
+  border: 2px solid #1abc9c;
+}
+
+table.dark {
+  border: 2px solid #1abc9c;
+}
+
+table.dark th {
+  background-color: #1abc9c;
+  color: white;
+}
+
+table.dark tr:nth-child(even) {
+  background-color: #3b5871;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Data Diriku</h2>
+<button onclick="toggleTheme()">Ganti Desain</button>
+
+<div class="container">
+  <!-- Tambahkan Foto di Sini -->
+  <img <img src="foto_biodata.jpg" alt="Deskripsi gambar"
+
+  <!-- Tabel -->
+  <table>
+    <tr>
+      <th>Nama Lengkap</th>
+      <td>Siti Ferda Fatinah Sessu</td>
+    </tr>
+    <tr>
+      <th>Nama Panggilan</th>
+      <td>Fatin</td>
+    </tr>
+    <tr>
+      <th>Tempat, Tanggal Lahir</th>
+      <td>Makassar, 28 Agustus 2006</td>
+    </tr>
+    <tr>
+      <th>Umur</th>
+      <td>18 Tahun</td>
+    </tr>
+    <tr>
+      <th>Jenis Kelamin</th>
+      <td>Perempuan</td>
+    </tr>
+    <tr>
+      <th>Gol. Darah</th>
+      <td>B</td>
+    </tr>
+    <tr>
+      <th>Agama</th>
+      <td>Islam</td>
+    </tr>
+    <tr>
+      <th>Alamat</th>
+      <td>Tiban Impian</td>
+    </tr>
+    <tr>
+      <th>Pekerjaan</th>
+      <td>Belum bekerja</td>
+    </tr>
+    <tr>
+      <th>Kewarganegaraan</th>
+      <td>Indonesia</td>
+    </tr>
+    <tr>
+      <th>wanna know me?</th>
+      <td><button onclick="window.location.href='button biodata.html'">Click Me!</button></td>
+    </tr>
+    <tr>
+      <th>else?</th>
+      <td>
+        <button onclick="window.location.href='button form.html'">Click Me!</button>
+      </td>
+    </tr>
+  </table>
+</div>
+<script>
+  function toggleTheme() {
+    document.body.classList.toggle("dark");
+    document.querySelector(".container").classList.toggle("dark");
+    document.querySelector("img").classList.toggle("dark");
+    document.querySelector("table").classList.toggle("dark");
+  }
+  </script>
+</body>
+</html>

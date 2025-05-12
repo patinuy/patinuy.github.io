@@ -1,0 +1,270 @@
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Tambahkan Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<title>Author</title>
+
+  <style>
+    body {
+      background-color: #000;
+      color: white;
+      font-family: 'Georgia', serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .profile-header {
+      padding: 40px 20px 10px;
+    }
+
+    .profile-header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid white;
+    }
+
+    .profile-header h1 {
+      font-size: 2.5em;
+      margin: 10px 0 0;
+    }
+
+    .profile-header p {
+      font-style: italic;
+      margin: 5px 0;
+    }
+
+    .social-icons {
+      margin: 20px 0;
+      font-size: 24px;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .image-box {
+      position: relative;
+      cursor: pointer; /* Ubah kursor saat hover */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      width: 250px;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .image-box:hover {
+      transform: scale(1.03); /* Efek zoom sedikit saat hover */
+      box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2); /* Efek shadow */
+    }
+    .image-box img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .image-caption {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      color: white;
+      font-weight: normal;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+      font-size: 14px;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 5px 10px;
+      border-radius: 6px;
+    }body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      background-color: #000;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: url('./images/header-bg.jpg') no-repeat center center/cover;
+    }
+
+    header img {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border: 5px solid white;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 20px 0 10px;
+    }
+
+    header p {
+      font-size: 1rem;
+      font-style: italic;
+    }
+
+    .social-icons {
+      margin-top: 20px;
+    }
+
+    .social-icons i {
+      margin: 0 0px;
+      font-size: 2rem;
+    }
+
+nav {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px; /* tinggi tetap agar padding konsisten */
+}
+
+nav .social-icons {
+  display: flex;
+  gap: 0px; /* jarak antar ikon */
+}
+
+nav .social-icons i {
+  font-size: 1.8rem;
+  color: #b57a44;
+  padding: 10px;
+  transition: transform 0.2s;
+}
+
+nav .social-icons i:hover {
+  transform: scale(1.1);
+}
+
+    nav a {
+      color: black;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      background-color: #111;
+      padding: 40px 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .project img {
+      max-width: 200px;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    .project img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #b57a44;
+      color: black;
+      text-align: center;
+      padding: 15px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="site-navigation">
+    <div class="site-navigation-inner site-container">
+      <div class="main-navigation">
+        <ul class="main-navigation__ul">
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="organization.html">organization</a></li>
+          <li><a href="hobby.html">hobby</a></li>
+        </ul>
+      </div>
+      <div id="myBtn" class="burger-container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <script>
+        // Toggle menu saat tombol diklik
+        function myFunction(x) {
+          x.classList.toggle("change");
+          document.querySelector(".main-navigation").classList.toggle("open");
+        }
+
+        // Tutup menu saat link diklik
+        document.addEventListener("DOMContentLoaded", function () {
+          const links = document.querySelectorAll(".main-navigation a");
+          const menu = document.querySelector(".main-navigation");
+          const burger = document.getElementById("myBtn");
+
+          links.forEach(link => {
+            link.addEventListener("click", () => {
+              // Tutup menu dan hilangkan class "change"
+              menu.classList.remove("open");
+              burger.classList.remove("change");
+            });
+          });
+        });
+      </script>
+    </div>
+  </nav>
+
+  <header>
+    <img src="./images/webcam-toy-photo7.jpg" alt="Author Photo" />
+    <h1>HOBBY</h1>
+    <p>Siti Ferda Fatinah Sessu</p>
+  </header>
+
+  <nav>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/peryew_/"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://x.com/perrxx2"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://www.youtube.com/@sffs28"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://www.tiktok.com/@eccuuw"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="gallery">
+      <div class="image-box">
+        <a href=""><img src="./images/minecraft.jpg" alt="Best Project"></a>
+        <div class="image-caption">Minecraft</div>
+      </div>
+      <div class="image-box">
+        <a href=""><img src="./images/coloring.png" alt="SSO Project"></a>
+        <div class="image-caption">Coloring</div>
+      </div>
+      <div class="image-box">
+        <a href=""><img src="./images/lettering1.jpg" alt="SSO Project"></a>
+        <div class="image-caption">Lettering</div>
+      </div>
+      <div class="image-box">
+        <a href=""><img src="./images/bricks.jpg" alt="SSO Project"></a>
+        <div class="image-caption">Bricks</div>
+    </div>
+    
+  </main>
+
+  <footer>
+    <p>© 2025 Author | Design by peryew | All rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
